@@ -4,11 +4,6 @@ def triangle(num):
         return num
     return num + triangle(num - 1)
 
-def square(num):
-    # - Get first half of triangle
-    result = triangle(num)
 
-    # - Get second half of triangle
-    for i in range(num, 0, -1):
-        result += num - i
-    return result
+def square(num):
+    return triangle(num) + triangle(num - 1)
