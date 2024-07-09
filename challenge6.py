@@ -6,7 +6,8 @@ class Shape:
 
 	def printRow(self, i):
 		raise NotImplementedError(
-            "Will be implemented by children extending this class")
+			"Will be implemented by children extending this class"
+		)
 
 	def print(self):
 		for i in range(self.height):
